@@ -21,3 +21,6 @@ Validation Datasets: 6 breast/colorectal cancer ST datasets, totaling 27 slices 
 Outperforms 8 SOTA methods (BLEEP, mclSTExp, SpaCell-plus, etc.) across three core metrics: AUC, AP, and F1-score, with an average AUC of 0.947 and F1-score of 0.831.
 Maintains stable performance in cross-batch/platform experiments (e.g., XeHBC, DuCIS datasets), verifying strong generalization.
 Ablation studies confirm: The UNI2h+OmiCLIP feature extractor combination, MSFA spatial aggregation module, and bidirectional cross-attention fusion all significantly contribute to performance.
+
+
+## Data link
