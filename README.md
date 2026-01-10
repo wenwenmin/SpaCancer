@@ -40,7 +40,7 @@ The 10X Visium Colorectal Cancer Visium datasets (ST_colon) are available in:[ht
 
 
 ## Pre-trained mode UNI-2h and OmiCLIP
-Given the outstanding performance of large pre-trained general-purpose foundation models in clinical tasks, we use UNI-2h and OmiCLIP as the backbone feature extractor. Before using SpaCancer, you need to apply to the model for permission to access the model weights: [https://huggingface.co/MahmoodLab/UNI2-h](https://huggingface.co/MahmoodLab/UNI2-h) and [https://huggingface.co/WangGuangyuLab/Loki](https://huggingface.co/WangGuangyuLab/Loki) .
+Given the outstanding performance of large pre-trained general-purpose foundation models in clinical tasks, we use UNI-2h and OmiCLIP as the backbone feature extractor. Before using SpaCancer, you need to apply to the two model for permission to access the model weights: [https://huggingface.co/MahmoodLab/UNI2-h](https://huggingface.co/MahmoodLab/UNI2-h) and [https://huggingface.co/WangGuangyuLab/Loki](https://huggingface.co/WangGuangyuLab/Loki) .
 Please follow these steps to integrate UNI and OmiCLIP into the pipeline:
 - Log in to Hugging Face and obtain your **access token**.
 - Paste your token into the 32 line of code in pre-process:
