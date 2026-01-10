@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ## Datasets
 The ST human HER2-positive breast tumor datasets (STHBC) are available in: [https://github.com/almaan/her2st](https://github.com/almaan/her2st).
 
-The 10X Visium Human Breast Cancer dataset (ViHBC) are available in: [https://zenodo.org/records/10437391](https://zenodo.org/records/10437391).
+The 10X Visium Human Breast Cancer Breast Cancer: Ductal Carcinoma In Situ, Lobular carcinoma In Situ, Invasive Carcinoma dataset (ViHBC) are available in: [https://www.10xgenomics.com/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0](https://www.10xgenomics.com/datasets/human-breast-cancer-block-a-section-1-1-standard-1-1-0).
 
 The Xenium Human Breast Cancer dataset (XeHBC) can be found at: [https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast).
 
