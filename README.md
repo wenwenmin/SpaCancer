@@ -1,9 +1,20 @@
-# SpaCancer:Large Foundation Model-Enhanced Histology–Spatial Transcriptomics Fusion for Cancer Region Segmentation
+# SpaCancer:Large Foundation Model-Enhanced Histology–Spatial Transcriptomics Fusion for Cancer Region Identification
 
 ![Over](Fig1_overview.jpg)
 
 ## Project Overview
 SpaCancer is a multimodal transfer learning framework designed for precise Cancer Tissue Region (CTR) detection, addressing the core need for accurate CTR identification in clinical oncology. By innovatively fusing histology images with Spatial Transcriptomics (ST) data, leveraging the strong feature extraction capability of Foundation Models (FMs) and the generalization advantage of transfer learning, SpaCancer effectively overcomes limitations of traditional methods—such as subjectivity, single-modal data constraints, ST data noise, and cross-batch/platform heterogeneity—providing reliable technical support for tumor heterogeneity analysis and clinical treatment.
+
+
+
+## Requirements
+All experiments were conducted on an NVIDIA RTX 3090 GPU. Before running SpaCancer, you need to create a conda environment and install the required packages:
+```shell
+conda create -n SpaCancer python==3.9.23
+conda activate SpaCancer
+pip install -r requirements.txt
+```
+
 
 ## Core Features
 1.Precise CTR Detection: Integrates morphological and gene expression multimodal information to achieve accurate segmentation of cancerous regions in breast cancer, colorectal cancer, and other malignancies.
@@ -15,12 +26,27 @@ SpaCancer is a multimodal transfer learning framework designed for precise Cance
 4.Stability & Reliability: Outperforms 8 state-of-the-art (SOTA) methods in multi-dataset validation, demonstrating robustness for clinical research and applications.
 
 ## Datasets
-Validation Datasets: 6 breast/colorectal cancer ST datasets, totaling 27 slices (3 multi-slice datasets: STHBC, CRC, ST colon; 3 single-slice datasets: 10XViHBC, XeHBC, DuCIS).
+The ST human HER2-positive breast tumor datasets (STHBC) are available in: [https://github.com/almaan/her2st](https://github.com/almaan/her2st).
 
-## Performance Advantages
-Outperforms 8 SOTA methods (BLEEP, mclSTExp, SpaCell-plus, etc.) across three core metrics: AUC, AP, and F1-score, with an average AUC of 0.947 and F1-score of 0.831.
-Maintains stable performance in cross-batch/platform experiments (e.g., XeHBC, DuCIS datasets), verifying strong generalization.
-Ablation studies confirm: The UNI2h+OmiCLIP feature extractor combination, MSFA spatial aggregation module, and bidirectional cross-attention fusion all significantly contribute to performance.
+The 10X Visium Human Breast Cancer dataset (ViHBC) are available in: [https://zenodo.org/records/10437391](https://zenodo.org/records/10437391).
+
+The Xenium Human Breast Cancer dataset (XeHBC) can be found at: [https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast).
+
+The 10X Visium Human Breast Cancer: Ductal Carcinoma In Situ, Invasive Carcinoma dataset (DuCIS) are available in: [https://www.10xgenomics.com/datasets/invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0](https://www.10xgenomics.com/datasets/invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0).
+
+The 10X Visium Colorectal Cancer Visium datasets (CRC) are available in: [https://zenodo.org/records/7760264](https://zenodo.org/records/7760264).
+
+The 10X Visium Colorectal Cancer Visium datasets (ST_colon) are available in:[https://www.biosino.org/node/project/detail/OEP001756](https://www.biosino.org/node/project/detail/OEP001756).
 
 
-## Data link
+## Pre-trained mode UNI and OmiCLIP
+Given the outstanding performance of large pre-trained general-purpose foundation models in clinical tasks, we use UNI and OmiCLIP as the backbone feature extractor. Before using SpaCancer, you need to apply to UNI for permission to access the model weights: [https://huggingface.co/mahmoodlab/UNI](https://huggingface.co/mahmoodlab/UNI) and [https://huggingface.co/WangGuangyuLab/Loki](https://huggingface.co/WangGuangyuLab/Loki) .
+Please follow these steps to integrate UNI and OmiCLIP into the pipeline:
+- Log in to Hugging Face and obtain your **access token**.
+- Paste your token into the 32 line of code in pre-process:
+   ```shell
+   login('The login you need to apply for')  # Replace with your actual token
+   ```
+
+🔒 Note: Do not share your token publicly. It is tied to your Hugging Face account and grants access to restricted models.
+
