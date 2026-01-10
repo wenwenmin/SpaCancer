@@ -50,3 +50,5 @@ Please follow these steps to integrate UNI and OmiCLIP into the pipeline:
 
 🔒 Note: Do not share your token publicly. It is tied to your Hugging Face account and grants access to restricted models.
 
+## Contact details
+If you have any questions, please contact dunameng0607@163.com.
