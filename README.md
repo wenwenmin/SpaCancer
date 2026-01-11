@@ -32,7 +32,7 @@ The 10X Visium Human Breast Cancer Breast Cancer: Ductal Carcinoma In Situ, Lobu
 
 The Xenium Human Breast Cancer dataset (XeHBC) can be found at: [https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast).
 
-The 10X Visium Human Breast Cancer: Ductal Carcinoma In Situ, Invasive Carcinoma dataset (DuCIS) are available in: [https://www.10xgenomics.com/datasets/invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0](https://www.10xgenomics.com/datasets/invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0).
+The 10X Visium Human Breast Cancer: Ductal Carcinoma In Situ, Invasive Carcinoma dataset (DuCIS) are available in: [https://www.10xgenomics.com/datasets/human-breast-cancer-ductal-carcinoma-in-situ-invasive-carcinoma-ffpe-1-standard-1-3-0](https://www.10xgenomics.com/datasets/human-breast-cancer-ductal-carcinoma-in-situ-invasive-carcinoma-ffpe-1-standard-1-3-0).
 
 The 10X Visium Colorectal Cancer Visium datasets (CRC) are available in: [https://zenodo.org/records/7760264](https://zenodo.org/records/7760264).
 
