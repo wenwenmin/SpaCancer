@@ -1,0 +1,5 @@
+Val Optimal Gamma: 0.141000
+Gamma Quantile (q): 0.422180
+Test Threshold Alpha: 0.040283
+Val Distribution Params: (0.1, 0.1)
+Test Distribution Params: (0.1, 0.1322830988263492)
